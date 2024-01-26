@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "_id": "094fedfd-4a7e-4474-937e-77906a2f76dd"
+    },
+    {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "_id": "adb10912-3fbc-42ee-92e2-079a8b110593"
+    }
+  ],
+  "playlists": [
+    {
+      "userid": "094fedfd-4a7e-4474-937e-77906a2f76dd",
+      "title": "p1",
+      "_id": "d6714767-35db-42ce-80b8-79b82236b947"
+    },
+    {
+      "userid": "adb10912-3fbc-42ee-92e2-079a8b110593",
+      "title": "p1",
+      "_id": "d8938030-9b19-4b9d-8cc3-5235921f02be"
+    }
+  ],
+  "tracks": [
+    {
+      "title": "t1",
+      "artist": "a1",
+      "duration": 5,
+      "_id": "4a6d640b-7526-4620-8243-b5d7fc39c823",
+      "playlistid": "d6714767-35db-42ce-80b8-79b82236b947"
+    }
+  ]
+}
