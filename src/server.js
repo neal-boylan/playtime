@@ -1,3 +1,4 @@
+import Joi from "joi";
 import dotenv from "dotenv";
 import Hapi from "@hapi/hapi";
 import Vision from "@hapi/vision";
@@ -22,8 +23,11 @@ async function init() {
     port: 3000,
     host: "localhost",
   });
+
   await server.register(Vision);
   await server.register(Cookie);
+  server.validator(Joi);
+
   server.views({
     engines: {
       hbs: Handlebars,
