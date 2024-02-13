@@ -15,16 +15,15 @@ export const playlistMemStore = {
   },
 
   async getPlaylistById(id) {
-    const list = playlists.find((playlist) => playlist._id === id);
-    list.tracks = await trackMemStore.getTracksByPlaylistId(list._id);
+    let list = playlists.find((playlist) => playlist._id === id);
+    // list.tracks = await trackMemStore.getTracksByPlaylistId(list._id);
+    if (list === undefined) list = null;
     return list;
   },
 
   async deletePlaylistById(id) {
-    // await db.read();
     const index = playlists.findIndex((playlist) => playlist._id === id);
-    playlists.splice(index, 1);
-    // await db.write();
+    if (index !== -1) playlists.splice(index, 1);
   },
 
   async deleteAllPlaylists() {

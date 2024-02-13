@@ -5,26 +5,35 @@
       "lastName": "Simpson",
       "email": "homer@simpson.com",
       "password": "secret",
-      "_id": "094fedfd-4a7e-4474-937e-77906a2f76dd"
+      "_id": "8fdaa137-e32c-42dd-9fef-83c2e800002f"
     },
     {
       "firstName": "Marge",
       "lastName": "Simpson",
       "email": "marge@simpson.com",
       "password": "secret",
-      "_id": "adb10912-3fbc-42ee-92e2-079a8b110593"
+      "_id": "18e1aa28-1e38-4e4b-9164-95f32d47dc63"
+    },
+    {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "_id": "9dbd5663-20c2-4e21-863d-51efc785bece"
     }
   ],
   "playlists": [
     {
-      "userid": "094fedfd-4a7e-4474-937e-77906a2f76dd",
-      "title": "p1",
-      "_id": "d6714767-35db-42ce-80b8-79b82236b947"
+      "title": "Playlist1",
+      "_id": "8d53877b-01b0-47d0-9b21-5700d84394a1"
     },
     {
-      "userid": "adb10912-3fbc-42ee-92e2-079a8b110593",
-      "title": "p1",
-      "_id": "d8938030-9b19-4b9d-8cc3-5235921f02be"
+      "title": "Playlist2",
+      "_id": "2f64cb6f-a527-4a8e-b10f-3cadea1d6ead"
+    },
+    {
+      "title": "Playlist3",
+      "_id": "4843f818-88c2-4f42-a499-c40e98d3f528"
     }
   ],
   "tracks": [
@@ -33,6 +42,13 @@
       "artist": "a1",
       "duration": 5,
       "_id": "4a6d640b-7526-4620-8243-b5d7fc39c823",
+      "playlistid": "d6714767-35db-42ce-80b8-79b82236b947"
+    },
+    {
+      "title": "t2",
+      "artist": "a1",
+      "duration": 3,
+      "_id": "606cdbd2-dbfd-4272-964b-18b836ed30a9",
       "playlistid": "d6714767-35db-42ce-80b8-79b82236b947"
     }
   ]
